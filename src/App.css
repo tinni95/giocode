@@ -95,3 +95,9 @@ p {
   margin-top: 20px;
   color: #707070;
 }
+
+.icon {
+  width: 25px;
+  margin-right: 20px;
+  height: 25px;
+}
