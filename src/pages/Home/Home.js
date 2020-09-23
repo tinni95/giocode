@@ -25,12 +25,12 @@ const Home = () => {
           style={{ paddingLeft: 80, paddingRight: 80, marginBottom: 40 }}
           direction="row"
         >
-          <p>24/10/1995</p>
+          <p style={{ fontWeight: 100 }}>24/10/1995</p>
           <p>Italy</p>
         </Grid>
         <i className={"quote"}>
-          “Being a creative person, I easily find effective ways to solve
-          problems entailing products’ infrastructure”
+          “Being a creative person, I easily find effective <br />
+          ways to solve problems entailing products’ infrastructure”
         </i>
       </div>
     </Grid>
