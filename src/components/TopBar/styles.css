@@ -134,7 +134,7 @@
 }
 
 .centerMenu {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -165,4 +165,18 @@
 
 .menuItem:hover {
   color: #18476e;
+}
+
+.sky #sky {
+  opacity: 0;
+}
+
+.sky.open #sky {
+  animation: opacity 0.8s;
+  opacity: 1;
+}
+
+.sky.open #sky {
+  z-index: 1 !important;
+  pointer-events: none;
 }
