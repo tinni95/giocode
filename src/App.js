@@ -1,10 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import { Switch, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import classNames from "classnames";
+import Career from "./pages/Career/Career";
+import Stack from "./pages/Stack/Stack";
+import MenuContext from "./refContext";
 
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -38,6 +40,7 @@ const Cursor = () => {
   const onMouseEnter = () => {
     setHidden(false);
   };
+
   const onMouseMove = (e) => {
     setPosition({ x: e.clientX, y: e.clientY });
   };
@@ -64,15 +67,32 @@ const Cursor = () => {
     />
   );
 };
+
 function App() {
+  const [title, setTitle] = React.useState("");
   return (
-    <div className="App">
-      <TopBar />
-      <Cursor />
-      <Switch>
-        <Route component={Home} path={"/"} exact />
-      </Switch>
-    </div>
+    <MenuContext.Provider
+      value={{
+        title,
+        setTitle: (val) => setTitle(val),
+        backEndRef: null,
+        designRef: null,
+        containerRef: null,
+        frontEndRef: null,
+        menuRef: null,
+        busy: false,
+      }}
+    >
+      <div className="App">
+        <TopBar />
+        <Cursor />
+        <Switch>
+          <Route component={Home} path={"/"} exact />
+          <Route component={Career} path={"/career"} exact />
+          <Route component={Stack} path={"/stack"} exact />
+        </Switch>
+      </div>
+    </MenuContext.Provider>
   );
 }
 

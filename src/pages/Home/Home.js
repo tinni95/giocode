@@ -5,7 +5,13 @@ import Giovanni from "../../assets/giovanni.png";
 import lin from "../../assets/lin.png";
 import phone from "../../assets/phone.png";
 import mail from "../../assets/mail.png";
-const Home = () => {
+import RefContext from "../../refContext";
+
+const Home = ({ refs }) => {
+  React.useEffect(() => {
+    refs.setTitle("ABOUT ME");
+  }, []);
+
   return (
     <Grid
       container
@@ -44,12 +50,17 @@ const Home = () => {
 
         <p className={"Title"}>GIOVANNI D'AMICO</p>
 
-        <p className={"subTitle"}>FULL STACK DEVELOPER</p>
+        <p className={"subTitle"}>MOBILE DEVELOPER</p>
         <Grid
           container
           justify="space-between"
           alignItems="center"
-          style={{ paddingLeft: 80, paddingRight: 80, marginBottom: 40 }}
+          style={{
+            paddingLeft: 80,
+            paddingRight: 80,
+            marginBottom: 40,
+            marginTop: 10,
+          }}
           direction="row"
         >
           <p style={{ fontWeight: 100 }}>24/10/1995</p>
@@ -64,4 +75,12 @@ const Home = () => {
   );
 };
 
-export default Home;
+const HomeWC = (props) => {
+  return (
+    <RefContext.Consumer>
+      {(con) => <Home {...props} refs={con} />}
+    </RefContext.Consumer>
+  );
+};
+
+export default HomeWC;
