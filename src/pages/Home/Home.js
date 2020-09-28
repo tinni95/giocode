@@ -6,8 +6,10 @@ import lin from "../../assets/lin.png";
 import phone from "../../assets/phone.png";
 import mail from "../../assets/mail.png";
 import RefContext from "../../refContext";
+import { useTranslation } from "react-i18next";
 
 const Home = ({ refs }) => {
+  const { t, i18n } = useTranslation();
   React.useEffect(() => {
     refs.setTitle("ABOUT ME");
   }, []);
@@ -66,10 +68,7 @@ const Home = ({ refs }) => {
           <p style={{ fontWeight: 100 }}>24/10/1995</p>
           <p>Italy</p>
         </Grid>
-        <i className={"quote"}>
-          “Being a creative person, I easily find effective <br />
-          ways to solve problems entailing products’ infrastructure”
-        </i>
+        <i className={"quote"}>{t('Welcome to React')}</i>
       </div>
     </Grid>
   );
