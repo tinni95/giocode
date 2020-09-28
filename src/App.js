@@ -7,6 +7,7 @@ import classNames from "classnames";
 import Career from "./pages/Career/Career";
 import Stack from "./pages/Stack/Stack";
 import MenuContext from "./refContext";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -89,6 +90,7 @@ function App() {
         <Switch>
           <Route component={Home} path={"/"} exact />
           <Route component={Career} path={"/career"} exact />
+          <Route component={Portfolio} path={"/portfolio"} exact />
           <Route component={Stack} path={"/stack"} exact />
         </Switch>
       </div>

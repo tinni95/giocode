@@ -86,7 +86,15 @@ const TopBar = ({ refs }) => {
         >
           MY STACK
         </p>
-        <p className={"menuItem"}>PORTFOLIO</p>
+        <p
+          className={"menuItem"}
+          onClick={() => {
+            handleClick();
+            history.push("/portfolio");
+          }}
+        >
+          PORTFOLIO
+        </p>
         <p
           className={"menuItem"}
           onClick={() => {

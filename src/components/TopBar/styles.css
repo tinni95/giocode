@@ -1,13 +1,13 @@
 @keyframes mymove {
   0% {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-bottom-right-radius: 120px;
   }
   100% {
     width: 150vw;
     height: 150vh;
-    border-bottom-right-radius: 1600px;
+    border-bottom-right-radius: 50000px;
   }
 }
 
@@ -123,7 +123,7 @@
 
   background-color: var(--pink);
   position: absolute;
-  transition: 0.5s;
+  transition: 0.5s all;
 }
 
 .wrapper.is-menu-open {
