@@ -70,6 +70,69 @@ export const FrontEndStack = (props) => {
               "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
             }
           />
+          <CareerItem
+            marginTop={20}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end Developer"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
+          <CareerItem
+            marginTop={0}
+            date={"Giu 2019/ Current"}
+            title={"Lead Front-end gianni"}
+            subtitle={"Alfonsino srl, Caserta, Italy"}
+            body={
+              "Created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security, storing and showing HQ images and real-time communication."
+            }
+          />
         </Card>
       </Grid>
     </Grid>

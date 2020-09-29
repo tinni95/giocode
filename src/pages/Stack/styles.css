@@ -3,7 +3,7 @@
     box-shadow: 0 0 0 0px rgba(24, 71, 110, 70%);
   }
   100% {
-    box-shadow: 0 0 0 1000px rgba(24, 71, 110, 70%);
+    box-shadow: 0 0 0 3000px rgba(24, 71, 110, 70%);
   }
 }
 
@@ -12,7 +12,7 @@
     box-shadow: 0 0 0 0px rgba(244, 114, 114, 89%);
   }
   100% {
-    box-shadow: 0 0 0 1000px rgba(244, 114, 114, 89%);
+    box-shadow: 0 0 0 3000px rgba(244, 114, 114, 89%);
   }
 }
 
@@ -21,7 +21,7 @@
     box-shadow: 0 0 0 0px rgba(63, 186, 197, 75%);
   }
   100% {
-    box-shadow: 0 0 0 1000px rgba(63, 186, 197, 75%);
+    box-shadow: 0 0 0 3000px rgba(63, 186, 197, 75%);
   }
 }
 
@@ -50,8 +50,8 @@
 }
 
 .frontEnd.blue {
-  animation: frontend 1s;
-  box-shadow: 0 0 0 1000px rgba(24, 71, 110, 70%);
+  animation: frontend 2s;
+  box-shadow: 0 0 0 3000px rgba(24, 71, 110, 70%);
 }
 
 .frontEnd.blue .heading {
@@ -81,7 +81,7 @@
 
 .backEnd.ocean {
   animation: backend 1s;
-  box-shadow: 0 0 0 1000px rgba(63, 186, 197, 75%);
+  box-shadow: 0 0 0 3000px rgba(63, 186, 197, 75%);
 }
 
 .backEnd.ocean .heading {
@@ -103,7 +103,7 @@
 
 .design.red {
   animation: design 1s;
-  box-shadow: 0 0 0 800px rgba(244, 114, 114, 89%);
+  box-shadow: 0 0 0 3000px rgba(244, 114, 114, 89%);
 }
 
 .design.red .heading {

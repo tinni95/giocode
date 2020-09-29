@@ -5,7 +5,7 @@ export const CareerItem = (props) => {
   return (
     <Grid container direction={"row"} style={{ marginLeft: 5, marginRight: 5 }}>
       <Grid item style={{ flex: 2, paddingTop: 15 }}>
-        <p style={{ fontFamily: "Open Sans, sans-serif", fontSize: 14 }}>
+        <p style={{ fontFamily: "Open Sans, sans-serif", fontSize: 12 }}>
           {props.date}
         </p>
       </Grid>
@@ -14,7 +14,7 @@ export const CareerItem = (props) => {
         style={{
           flex: 0.01,
           backgroundColor: "lightgrey",
-          marginTop: 20,
+          marginTop: 22,
           marginBottom: -40,
         }}
       >
@@ -34,13 +34,32 @@ export const CareerItem = (props) => {
         direction={"column"}
         style={{ textAlign: "left", flex: 6, padding: 15 }}
       >
-        <p style={{ fontFamily: "Open Sans, sans-serif", fontWeight: 700 }}>
+        <p
+          style={{
+            fontFamily: "Poppins, sans-serif",
+            fontWeight: 700,
+            color: "#353535",
+          }}
+        >
           {props.title}
         </p>
-        <p style={{ fontFamily: "Open Sans, sans-serif", fontSize: 12 }}>
+        <p
+          style={{
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: 12,
+            fontWeight: 700,
+            color: "#353434",
+          }}
+        >
           {props.subtitle}
         </p>
-        <p style={{ fontFamily: "Open Sans, sans-serif", fontSize: 12 }}>
+        <p
+          style={{
+            fontFamily: "Open Sans, sans-serif",
+            fontSize: 14,
+            marginTop: 5,
+          }}
+        >
           {props.body}
         </p>
       </Grid>

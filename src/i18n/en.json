@@ -1,5 +1,13 @@
 {
-    "translation": {
-      "Welcome to React": "Being a creative person, I easily find effective ways to solve problems entailing products’ infrastructure"
-    }
+  "translation": {
+    "Welcome to React": "Being a creative person, I easily find effective ways to solve problems entailing products’ infrastructure",
+    "AlfonsinoJob": "As a front-end developer in alfonsino I am in charge to migrate the three of the company apps (partner, driver and clients) to react-native. To increase performance compared to the legacy framework used. ",
+    "Giu": "Jun",
+    "tendit": "Created th e app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security,storing and showing HQ images and real-time communication.",
+    "purpleSquid": "Being part of the development of a restaurant ordering app, as Software Engineer for Purple Squid Software; I improved teamwork skills, adjusting to weekly deadlines under an agile methodology organized in sprints. Also gained full stack skills such as graphql-yoga, sequelize and relay.",
+    "Vuxe": "Working for Vuxe Ltd as a full-stack developer, I improved the job demanding platform. Among the tasks I migrated the react-native application from REST api to GRAPHQL and wrote integration tests. I created a signup form for businesses hosted on a web app including google location api.",
+    "heriot": "As a thesis project, I developed an events app for students living in Heriot-Watt Campus, in order to improve their social life and facilitating the participation to events. I gathered the app requirements through a student sur vey and a focused interview with the events organization managers. During this project I selected and discovered the best technologies to use in developing a mobile app.",
+    "annual": "Worked for a period of 3 months in a call center in Heriot-watt university to ask funds to the alumni. Developing interpersonal skills and teamwork.",
+    "activity": "I have been an activity leader for EF international school assisting young students into their travels abroad. Taking responsabilities such as on field trips managing large groups of international students."
   }
+}

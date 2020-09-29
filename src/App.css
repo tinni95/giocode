@@ -1,6 +1,17 @@
 :root {
   --pink: #fffafa;
 }
+.lin:hover,
+.num:hover,
+.email:hover {
+  filter: invert(0.5);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
 
 .cursor {
   transition: all 150ms ease;

@@ -33,18 +33,40 @@ const Home = ({ refs }) => {
         }}
       >
         <Grid direction="column" style={{ textAlign: "left" }} item>
-          <Grid direction="row" style={{ marginTop: 10 }} container>
-            <img src={lin} className={"icon"} />
-            <p className={"contact"}> linkedin.com/in/gdamico241095</p>
-          </Grid>
-          <Grid direction="row" style={{ marginTop: 10 }} container>
-            <img src={phone} className={"icon"} />
-            <p className={"contact"}>+39 3516620601</p>
-          </Grid>
-          <Grid direction="row" style={{ marginTop: 10 }} container>
-            <img src={mail} className={"icon"} />
-            <p className={"contact"}>g.damico241095@gmail.com</p>
-          </Grid>
+          <a href="https://www.linkedin.com/in/gdamico241095">
+            <Grid
+              direction="row"
+              className={"lin"}
+              style={{ marginTop: 10 }}
+              container
+            >
+              <img src={lin} className={"icon"} />
+              <p className={"contact"}> linkedin.com/in/gdamico241095</p>
+            </Grid>
+          </a>
+          <a href="tel:+39 3516620601">
+            <Grid
+              direction="row"
+              className={"num"}
+              style={{ marginTop: 10 }}
+              container
+              o
+            >
+              <img src={phone} className={"icon"} />
+              <p className={"contact"}>+39 3516620601</p>
+            </Grid>
+          </a>
+          <a href="mailto:g.damico241095@gmail.com">
+            <Grid
+              direction="row"
+              className={"email"}
+              style={{ marginTop: 10 }}
+              container
+            >
+              <img src={mail} className={"icon"} />
+              <p className={"contact"}>g.damico241095@gmail.com</p>
+            </Grid>
+          </a>
         </Grid>
       </Grid>
       <div style={{ width: 400 }}>
@@ -68,7 +90,7 @@ const Home = ({ refs }) => {
           <p style={{ fontWeight: 100 }}>24/10/1995</p>
           <p>Italy</p>
         </Grid>
-        <i className={"quote"}>{t('Welcome to React')}</i>
+        <i className={"quote"}>{t("Welcome to React")}</i>
       </div>
     </Grid>
   );

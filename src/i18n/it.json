@@ -1,5 +1,10 @@
 {
   "translation": {
-    "Welcome to React": "Essendo una persona creativa, trovo facilmente modi effettivi per risolvere i problemi delle infrastrutture che creo."
+    "Welcome to React": "Essendo una persona creativa, trovo facilmente modi effettivi per risolvere i problemi delle infrastrutture che creo.",
+    "AlfonsinoJob": "Incaricato a riscrivere le tre app di alfonsino (partner, driver e clienti) in react-native, per migliorare le performance rispetto ai framework utilizzati in precedenza.",
+    "Giu": "Giu",
+    "tendit": "Gestito lo sviluppo del front-end e back-end di un'app complessa che include autenticazione, comunicazione real-time, alta concorrenza ecc. Front-end scritto in react-native e back end in node.js, usando graphql",
+    "purpleSquid": "Essendo parte del team di sviluppo di un app per delivery, ho migliorato le mie skill di teamwork, prendendo parte a sprint settimanali utilizzando la metodologia agile. Ho anche imparato nuove skills come graphql-yoga, sequelize e relay.",
+    "Vuxe": "Lavorando a Vuxe Ltd, ho migliorato l'infrastruttura della piattaforma di ricerca di lavoro. Le mie partecipazioni includevano migrare l'api dell'applicazione in react-native all'utilizzo di Graphql invece di Rest, ho scritto integration tests con jest e creato una piattaforma in React.js per la gestione dei businesses. In questo lavoro ho imparato nuove skill, tra cui testing con jest, api integration e django."
   }
 }
