@@ -10,6 +10,8 @@ import MenuContext from "./refContext";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n/i18n";
+import Education from "./pages/Education/Education";
+
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
   const [hidden, setHidden] = React.useState(false);
@@ -92,6 +94,7 @@ function App() {
           <Switch>
             <Route component={Home} path={"/"} exact />
             <Route component={Career} path={"/career"} exact />
+            <Route component={Education} path={"/education"} exact />
             <Route component={Portfolio} path={"/portfolio"} exact />
             <Route component={Stack} path={"/stack"} exact />
           </Switch>

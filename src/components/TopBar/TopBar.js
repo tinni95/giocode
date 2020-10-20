@@ -75,7 +75,7 @@ const TopBar = ({ refs }) => {
             history.push("/");
           }}
         >
-          ABOUT ME
+          CONTACTS
         </p>
         <p
           className={"menuItem"}
@@ -108,7 +108,7 @@ const TopBar = ({ refs }) => {
           className={"menuItem"}
           onClick={() => {
             handleClick();
-            history.push("/career");
+            history.push("/education");
           }}
         >
           EDUCATION

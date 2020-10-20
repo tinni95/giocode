@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Home = ({ refs }) => {
   const { t, i18n } = useTranslation();
   React.useEffect(() => {
-    refs.setTitle("ABOUT ME");
+    refs.setTitle("CONTACTS");
   }, []);
 
   return (

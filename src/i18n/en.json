@@ -1,13 +1,17 @@
 {
   "translation": {
     "Welcome to React": "Being a creative person, I easily find effective ways to solve problems entailing products’ infrastructure",
-    "AlfonsinoJob": "As a front-end developer in alfonsino I am in charge to migrate the three of the company apps (partner, driver and clients) to react-native. To increase performance compared to the legacy framework used. ",
+    "AlfonsinoJob": "In collaboration with my assistant and with the back-end team, my work consisted in re-writing the application of the food delivery start-up into React-Native, having less performant frameworks. I created some android native java code to solve specific problems and enriched my knowledge in Redux and git.",
     "Giu": "Jun",
-    "tendit": "Created th e app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. Addressed problems such as GDPR and data security,storing and showing HQ images and real-time communication.",
-    "purpleSquid": "Being part of the development of a restaurant ordering app, as Software Engineer for Purple Squid Software; I improved teamwork skills, adjusting to weekly deadlines under an agile methodology organized in sprints. Also gained full stack skills such as graphql-yoga, sequelize and relay.",
-    "Vuxe": "Working for Vuxe Ltd as a full-stack developer, I improved the job demanding platform. Among the tasks I migrated the react-native application from REST api to GRAPHQL and wrote integration tests. I created a signup form for businesses hosted on a web app including google location api.",
+    "tendit": "Together with other two associates, I launched my own job-demanding start-up. I created the app infrastructure, entailing a back-end written in NodeJs and a front-end in React-Native. The whole hosted on a docker container on digitalOcean.",
+    "purpleSquid": "Being part of the development of a restaurant ordering app, as Software Engineer for Purple Squid Software; I improved teamwork skills, adjusting to weekly deadlines under an agile methodology organized in sprints.",
+    "Vuxe": "Working for Vuxe Ltd as a full-stack developer, I improved the job demanding platform. The tasks included migrating the react-native application from REST api to GRAPHQL and to write integration tests. I created a signup form for businesses; hosted on a web app including google location api.",
     "heriot": "As a thesis project, I developed an events app for students living in Heriot-Watt Campus, in order to improve their social life and facilitating the participation to events. I gathered the app requirements through a student sur vey and a focused interview with the events organization managers. During this project I selected and discovered the best technologies to use in developing a mobile app.",
     "annual": "Worked for a period of 3 months in a call center in Heriot-watt university to ask funds to the alumni. Developing interpersonal skills and teamwork.",
-    "activity": "I have been an activity leader for EF international school assisting young students into their travels abroad. Taking responsabilities such as on field trips managing large groups of international students."
+    "activity": "I have been an activity leader for EF international school assisting young students into their travels abroad. Taking responsabilities such as on field trips managing large groups of international students.",
+    "Udemy": "Udemy Courses on Dev-ops, React and React-Native, socket-io and redis. As well as web security and nodejs",
+    "Degree": "Awarded a Bachelor of Science in Computer Science with honor of the first class.",
+    "ef": "Training course to enable and prepare students to the British superior education system.",
+    "Vinci": "During this period I won four competition in which I traveled abroad to study English. One month each time"
   }
 }
