@@ -74,7 +74,7 @@ const Home = ({ refs }) => {
 
         <p className={"Title"}>GIOVANNI D'AMICO</p>
 
-        <p className={"subTitle"}>MOBILE DEVELOPER</p>
+        <p className={"subTitle"}>FRONT-END ENGINEER</p>
         <Grid
           container
           justify="space-between"

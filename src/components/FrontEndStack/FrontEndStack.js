@@ -2,15 +2,6 @@ import React from "react";
 import { Grid, Card, makeStyles, Paper } from "@material-ui/core";
 import { StackItem } from "../StackItem/StackItem";
 
-import react from "../../assets/Stack-Front-end/react.png";
-import html from "../../assets/Stack-Front-end/html.png";
-import css from "../../assets/Stack-Front-end/css.png";
-import typescript from "../../assets/Stack-Front-end/typescript.png";
-import redux from "../../assets/Stack-Front-end/redux.svg";
-import jest from "../../assets/Stack-Front-end/Jest.png";
-import dj from "../../assets/Stack-Front-end/django.png";
-import mat from "../../assets/Stack-Front-end/material-ui.svg";
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -30,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const FrontEndStack = (props) => {
+export const StackContainer = ({ items }) => {
   const classes = useStyles();
   return (
     <Grid container justify={"center"} xs={12}>
@@ -42,14 +33,9 @@ export const FrontEndStack = (props) => {
         spacing={3}
         justify={"center"}
       >
-        <StackItem img={react} text={"React-native \n React"} />
-        <StackItem img={html} text={"html"} />
-        <StackItem img={css} text={"css"} />
-        <StackItem img={typescript} text={"typescript"} />
-        <StackItem img={redux} text={"redux"} />
-        <StackItem img={jest} text={"Jest"} />
-        <StackItem img={dj} text={"django"} />
-        <StackItem img={mat} text={"material UI"} />
+        {items.map((item) => (
+          <StackItem img={item.img} text={item.text} />
+        ))}
       </Grid>
     </Grid>
   );

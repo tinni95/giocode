@@ -1,9 +1,14 @@
 import { Card, Grid } from "@material-ui/core";
-import { TramRounded } from "@material-ui/icons";
 import React from "react";
-import { FrontEndStack } from "../../components/FrontEndStack/FrontEndStack";
+import { StackContainer } from "../../components/FrontEndStack/FrontEndStack";
+import {
+  backEndStackItems,
+  frontEndStackItems,
+  designStackItems,
+} from "../../constants/StackItems";
 import RefContext from "../../refContext";
 import "./styles.css";
+
 const Stack = ({ refs }) => {
   React.useEffect(() => {
     refs.setTitle("MY STACK");
@@ -14,6 +19,8 @@ const Stack = ({ refs }) => {
   refs.designRef = React.useRef();
   refs.backEndRef = React.useRef();
 
+  const [active, setActive] = React.useState();
+
   const frontEndToggle = () => {
     refs.frontEndRef.current.classList.toggle("blue");
     refs.containerRef.current.classList.toggle("visible");
@@ -21,6 +28,7 @@ const Stack = ({ refs }) => {
     refs.backEndRef.current.classList.toggle("invisible");
     refs.menuRef.current.classList.toggle("open");
     refs.busy = "blue";
+    setActive("FRONTEND");
   };
 
   const designToggle = () => {
@@ -30,6 +38,7 @@ const Stack = ({ refs }) => {
     refs.containerRef.current.classList.toggle("visible");
     refs.menuRef.current.classList.toggle("open");
     refs.busy = "red";
+    setActive("DESIGN");
   };
 
   const backEndToggle = () => {
@@ -39,17 +48,19 @@ const Stack = ({ refs }) => {
     refs.designRef.current.classList.toggle("invisible");
     refs.menuRef.current.classList.toggle("open");
     refs.busy = "ocean";
+    setActive("BACKEND");
   };
 
   return (
-    <Grid
-      className={"vennContainer"}
-      container
-      justify={"center"}
-      style={{ backgroundColor: "#FBFBFB" }}
-    >
+    <Grid className={"vennContainer"} container justify={"center"}>
       <div class={"frontEndDoc"} ref={refs.containerRef}>
-        <FrontEndStack />
+        {active == "FRONTEND" ? (
+          <StackContainer items={frontEndStackItems} />
+        ) : active == "BACKEND" ? (
+          <StackContainer items={backEndStackItems} />
+        ) : (
+          <StackContainer items={designStackItems} />
+        )}
       </div>
       <div ref={refs.backEndRef} onClick={backEndToggle} className={"backEnd"}>
         <p className={"heading"}>BACK-END</p>
@@ -58,7 +69,6 @@ const Stack = ({ refs }) => {
         <p className={"heading"}>DESIGN</p>
       </div>
       <div
-        r
         onClick={frontEndToggle}
         ref={refs.frontEndRef}
         className={"frontEnd"}
