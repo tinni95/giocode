@@ -39,7 +39,7 @@ const Education = () => {
             marginTop={0}
             date={"Sep 2013/ Aug 2014"}
             title={"EF University Foundation Year"}
-            subtitle={"PurpleSquid ltd, Glasgow, UK"}
+            subtitle={"Ef School, Cambridge"}
             body={t("ef")}
           />
           <CareerItem

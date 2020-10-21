@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-
+import "./Home.css";
 import Giovanni from "../../assets/giovanni.png";
 import lin from "../../assets/lin.png";
 import phone from "../../assets/phone.png";
@@ -22,16 +22,7 @@ const Home = ({ refs }) => {
       alignItems="center"
       direction="column"
     >
-      <Grid
-        container
-        alignItems="flex-end"
-        style={{
-          position: "absolute",
-          top: 20,
-          justifyContent: "flex-end",
-          marginRight: 100,
-        }}
-      >
+      <Grid container className={"contacts"}>
         <Grid direction="column" style={{ textAlign: "left" }} item>
           <a href="https://www.linkedin.com/in/gdamico241095">
             <Grid
@@ -69,7 +60,7 @@ const Home = ({ refs }) => {
           </a>
         </Grid>
       </Grid>
-      <div style={{ width: 400 }}>
+      <div className={"GiocodeContainer"}>
         <img src={Giovanni} className={"Giocode"} />
 
         <p className={"Title"}>GIOVANNI D'AMICO</p>

@@ -11,6 +11,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n/i18n";
 import Education from "./pages/Education/Education";
+import { isMobile } from "react-device-detect";
 
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -90,7 +91,7 @@ function App() {
       >
         <div className="App">
           <TopBar />
-          <Cursor />
+          {!isMobile && <Cursor />}
           <Switch>
             <Route component={Home} path={"/"} exact />
             <Route component={Career} path={"/career"} exact />

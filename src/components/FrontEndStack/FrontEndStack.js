@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 export const StackContainer = ({ items }) => {
   const classes = useStyles();
   return (
-    <Grid container justify={"center"} xs={12}>
+    <Grid container justify={"center"} style={{ paddingBottom: 60 }} xs={12}>
       <Grid
         className={classes.card}
         container

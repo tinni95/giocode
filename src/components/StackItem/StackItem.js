@@ -13,7 +13,9 @@ export const StackItem = (props) => {
         borderRadius: 15,
       }}
       item
-      xs={2}
+      xs={12}
+      sm={4}
+      lg={2}
     >
       <div class="flip-card-inner">
         <div class="flip-card-front">
