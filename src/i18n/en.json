@@ -14,12 +14,17 @@
     "ef": "Training course to enable and prepare students to the British superior education system.",
     "Vinci": "During this period I won four competition in which I traveled abroad to study English. One month each time",
     "alfPartnerP": "Written, tested and distributed a mobile app targeting android tablet devices to 800+ users.",
+    "alfPartnerB": "As part of my part-time job at Alfonsino srl. I developed the app utilised by Alfonsino’s restaurants partner. The app included complex flows and requirements like ringing tablet on loop on new order arrives, working on old android devices (kitkat) and many others. This experience allowed me to approach android native development and native modules integration in react-native",
     "tenditP": "Designed the user interface, developed the front end and back end of a mobile app running on web/ android and iOS.",
     "inventarioP": "Developed and distributed a utility mobile app for a single user. The app facilitates the user’s daily work by registering and managing their products.",
     "valore24P": "Collaborated with a back-end developer to integrate a new feature in Valore-24, a popular tool used by Italian companies and distributed by Il sole 24 ore.",
+    "valore24B": "Created the front end of a section of the app offered by il sole 24 ore: Valore24. In collaboration with a back-end developer, we created a new session in the web-application, the risk assessment. Additionally we migrated the app to a different back-end, integrating a new api.",
     "diverseP": "Created, deployed and distributed an agency website",
+    "diverseB": "Created a website for a software development agency. With the help of a designer who created its brand identity, I made the website performant and easily extendable, creating a custom Django theme.",
     "blogappP": "Created a showcase blogging app including back-end and front-end development. The app includes also real-time updates between its features.",
+    "blogappB": "Full stack mobile and web application made with graphql back-end/ apollo and react-native with expo as front end. The app runs on any device (web-android-ios) as it is using react-native-web. The app uses real time updates and other really cool features, Clone its repo to have a go :).",
     "diversecommerceP": "Created a showcase E-commerce progressive web app.",
-    "netflixP": "Created a showcase clone of popular entertainment site Netflix."
+    "netflixP": "Created a showcase clone of popular entertainment site Netflix.",
+    "netflixB": "This is a Netflix clone realised to showcase an entertainment app in react. The login/sign up flow was implemented using firebase auth and the collection of films and series are stored on firestore."
   }
 }

@@ -1,0 +1,126 @@
+.PortfolioItemHeaderContainer {
+  padding: 100px;
+}
+
+.PortfolioItemTitle {
+  color: #18476e;
+  font-family: "Baloo Tammudu 2";
+  margin-bottom: -40px;
+}
+
+.PortfolioItemHeaderContainer img {
+  max-width: 75px;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+
+.PortfolioItemCompleted {
+  flex: 1;
+  text-align: right;
+  font-weight: 200;
+  font-size: 22px;
+  margin-right: 50px !important;
+}
+
+.PortfolioItemSubtitle i {
+  font-weight: 500;
+  color: #18476e;
+}
+
+.PortfolioItemSubtitle {
+  text-align: left;
+  padding-left: 25px;
+  margin-top: -10px;
+  padding-bottom: 30px;
+}
+
+.PortfolioSectionTitle {
+  color: #18476e;
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.PortfolioSummarySectionContainer {
+  border-right: 1px solid #dbd7d3;
+  text-align: left;
+  padding-right: 15px;
+}
+
+.PortfolioStackSectionContainer {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.PortfolioSectionBody {
+  font-family: Open Sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.PortfolioSectionStack {
+  margin-top: 15px;
+}
+
+.PortfolioStackContainer {
+  padding-top: 20px;
+}
+
+.PortfolioStackContainer img {
+  max-width: 30px;
+  padding: 0;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .PortfolioItemHeaderContainer {
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .PortfolioStackSectionContainer {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .PortfolioSummarySectionContainer {
+    border-right: none;
+    text-align: left;
+  }
+
+  .PortfolioItemTitle {
+    color: #18476e;
+    font-family: "Baloo Tammudu 2";
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+
+  .PortfolioItemSubtitle {
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 5px !important;
+    border-bottom: 1px solid #dbd7d3;
+    padding-bottom: 15px;
+  }
+
+  .PortfolioItemCompleted {
+    text-align: left;
+    font-weight: 200;
+    font-size: 18px;
+    margin-left: 15px !important;
+  }
+  .PortfolioItemHeaderContainer img {
+    max-width: 45px;
+    padding: 5px;
+    padding-bottom: 2.5spx;
+  }
+
+  .PortfolioSectionBody {
+    font-size: 16px;
+  }
+  .PortfolioSectionStack {
+    margin-top: 15px;
+  }
+}

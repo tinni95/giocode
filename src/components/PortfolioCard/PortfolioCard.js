@@ -4,7 +4,7 @@ import "./Portfolio.css";
 
 export const PortfolioCard = (props) => {
   return (
-    <Grid container sm={12} md={6}>
+    <Grid onClick={props.onClick} container sm={12} md={6}>
       <Card className={"PortfolioCard"}>
         <Grid container style={{ flexWrap: "nowrap" }} direction={"row"}>
           <Grid item>
@@ -15,15 +15,7 @@ export const PortfolioCard = (props) => {
             style={{ margin: 20, textAlign: "left" }}
             direction={"row"}
           >
-            <p
-              style={{
-                fontFamily: "Open Sans, sans-serif",
-                fontWeight: 700,
-                fontSize: 23,
-              }}
-            >
-              {props.title}
-            </p>
+            <p className={"PortfolioTitle"}>{props.title}</p>
             <p
               style={{
                 fontFamily: "Open Sans, sans-serif",
