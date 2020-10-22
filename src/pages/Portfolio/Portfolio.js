@@ -11,7 +11,8 @@ import diversecommerce from "../../assets/portfolio/diversecommerce.png";
 import netflix from "../../assets/portfolio/netflix.png";
 import { PortfolioCard } from "../../components/PortfolioCard/PortfolioCard";
 import { useTranslation } from "react-i18next";
-
+import "./styles.css";
+import { Items } from "../../constants/PortfolioItems";
 const Portfolio = ({ refs }) => {
   React.useEffect(() => {
     refs.setTitle("PORTFOLIO");
@@ -19,64 +20,15 @@ const Portfolio = ({ refs }) => {
   const { t, i18n } = useTranslation();
   return (
     <Grid container justify={"center"} style={{ backgroundColor: "#FBFBFB" }}>
-      <Grid
-        style={{
-          paddingTop: 125,
-          paddingBottom: 40,
-          justifyContent: "space-between",
-        }}
-        container
-        xs={12}
-      >
-        <PortfolioCard
-          image={alf}
-          title={"Alfonsino Partner"}
-          where={"App development"}
-          body={t("alfPartnerP")}
-        />
-        <PortfolioCard
-          image={tendit}
-          title={"Tendit"}
-          where={"App development, UX, back-end, website development"}
-          body={t("tenditP")}
-        />
-
-        <PortfolioCard
-          image={inventario}
-          title={"Inventario"}
-          where={"App development, UX, Back-end development"}
-          body={t("inventarioP")}
-        />
-        <PortfolioCard
-          image={valore24}
-          title={"Valore-24"}
-          where={"Feature integration, website development"}
-          body={t("valore24P")}
-        />
-        <PortfolioCard
-          image={diverse}
-          title={"Diverse agency"}
-          where={"Website development"}
-          body={t("diverseP")}
-        />
-        <PortfolioCard
-          image={blog}
-          title={"Blog app"}
-          where={"Blogging app, mobile app, back-end, showcase"}
-          body={t("blogappP")}
-        />
-        <PortfolioCard
-          image={diversecommerce}
-          title={"Diverse e-commerce"}
-          where={"E-commerce development, showcase"}
-          body={t("diversecommerceP")}
-        />
-        <PortfolioCard
-          image={netflix}
-          title={"Netflix"}
-          where={"Entertainment app, showcase"}
-          body={t("netflixP")}
-        />
+      <Grid className={"PortfolioContainer"} container xs={12}>
+        {Items.map(({ image, title, subtitle, bodyShort }) => (
+          <PortfolioCard
+            image={image}
+            title={title}
+            where={subtitle}
+            body={t(bodyShort)}
+          />
+        ))}
       </Grid>
     </Grid>
   );

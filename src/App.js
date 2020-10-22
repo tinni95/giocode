@@ -12,6 +12,7 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n/i18n";
 import Education from "./pages/Education/Education";
 import { isMobile } from "react-device-detect";
+import PortfolioItem from "./pages/PortfolioItem/PortfolioItem";
 
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -97,6 +98,11 @@ function App() {
             <Route component={Career} path={"/career"} exact />
             <Route component={Education} path={"/education"} exact />
             <Route component={Portfolio} path={"/portfolio"} exact />
+            <Route
+              component={PortfolioItem}
+              path={"/portfolio-item/:id"}
+              exact
+            />
             <Route component={Stack} path={"/stack"} exact />
           </Switch>
         </div>

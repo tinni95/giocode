@@ -4,41 +4,47 @@ import "./Portfolio.css";
 
 export const PortfolioCard = (props) => {
   return (
-    <Card className={"PortfolioCard"} style={{ maxWidth: 600, margin: 60 }}>
-      <Grid container style={{ flexWrap: "nowrap" }} direction={"row"}>
-        <Grid item>
-          <img src={props.image} style={{ width: 100, padding: 35 }} />
+    <Grid container sm={12} md={6}>
+      <Card className={"PortfolioCard"}>
+        <Grid container style={{ flexWrap: "nowrap" }} direction={"row"}>
+          <Grid item>
+            <img src={props.image} style={{ width: 100, padding: 35 }} />
+          </Grid>
+          <Grid
+            item
+            style={{ margin: 20, textAlign: "left" }}
+            direction={"row"}
+          >
+            <p
+              style={{
+                fontFamily: "Open Sans, sans-serif",
+                fontWeight: 700,
+                fontSize: 23,
+              }}
+            >
+              {props.title}
+            </p>
+            <p
+              style={{
+                fontFamily: "Open Sans, sans-serif",
+                fontSize: 12,
+                marginTop: 5,
+              }}
+            >
+              {props.where}
+            </p>
+            <p
+              style={{
+                fontFamily: "Open Sans, sans-serif",
+                fontSize: 14,
+                marginTop: 2.5,
+              }}
+            >
+              {props.body}
+            </p>
+          </Grid>
         </Grid>
-        <Grid item style={{ margin: 20, textAlign: "left" }} direction={"row"}>
-          <p
-            style={{
-              fontFamily: "Open Sans, sans-serif",
-              fontWeight: 700,
-              fontSize: 23,
-            }}
-          >
-            {props.title}
-          </p>
-          <p
-            style={{
-              fontFamily: "Open Sans, sans-serif",
-              fontSize: 12,
-              marginTop: 5,
-            }}
-          >
-            {props.where}
-          </p>
-          <p
-            style={{
-              fontFamily: "Open Sans, sans-serif",
-              fontSize: 14,
-              marginTop: 2.5,
-            }}
-          >
-            {props.body}
-          </p>
-        </Grid>
-      </Grid>
-    </Card>
+      </Card>
+    </Grid>
   );
 };
