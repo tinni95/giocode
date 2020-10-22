@@ -1,0 +1,5 @@
+.PortfolioCard:hover {
+  background-color: rgba(63, 186, 197, 75%);
+  transition: 0.5s;
+  color: white;
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import { Card, Grid } from "@material-ui/core";
+import "./Portfolio.css";
 
 export const PortfolioCard = (props) => {
   return (
-    <Card style={{ width: 600, margin: 50 }}>
+    <Card className={"PortfolioCard"} style={{ maxWidth: 600, margin: 60 }}>
       <Grid container style={{ flexWrap: "nowrap" }} direction={"row"}>
         <Grid item>
-          <img src={props.image} style={{ width: 150 }} />
+          <img src={props.image} style={{ width: 100, padding: 35 }} />
         </Grid>
         <Grid item style={{ margin: 20, textAlign: "left" }} direction={"row"}>
           <p
@@ -22,6 +23,7 @@ export const PortfolioCard = (props) => {
             style={{
               fontFamily: "Open Sans, sans-serif",
               fontSize: 12,
+              marginTop: 5,
             }}
           >
             {props.where}
@@ -29,7 +31,8 @@ export const PortfolioCard = (props) => {
           <p
             style={{
               fontFamily: "Open Sans, sans-serif",
-              fontSize: 16,
+              fontSize: 14,
+              marginTop: 2.5,
             }}
           >
             {props.body}
