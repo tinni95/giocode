@@ -1,11 +1,12 @@
 import { Card, Grid } from "@material-ui/core";
-import React from "react";
+import React, { useContext } from "react";
 import RefContext from "../../refContext";
 import { PortfolioCard } from "../../components/PortfolioCard/PortfolioCard";
 import { useTranslation } from "react-i18next";
 import "./styles.css";
 import { Items } from "../../constants/PortfolioItems";
 import { useHistory } from "react-router-dom";
+import refContext from "../../refContext";
 
 const Portfolio = ({ refs }) => {
   React.useEffect(() => {
@@ -22,7 +23,11 @@ const Portfolio = ({ refs }) => {
             title={title}
             where={subtitle}
             body={t(bodyShort)}
-            onClick={() => history.push("portfolio-item/" + id)}
+            onClick={() => {
+              history.push("portfolio-item/" + id);
+              refs.menuRef.current.classList.toggle("open");
+              refs.busy = "portfolio";
+            }}
           />
         ))}
       </Grid>

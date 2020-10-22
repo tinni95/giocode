@@ -24,6 +24,7 @@
     "blogappP": "Created a showcase blogging app including back-end and front-end development. The app includes also real-time updates between its features.",
     "blogappB": "Full stack mobile and web application made with graphql back-end/ apollo and react-native with expo as front end. The app runs on any device (web-android-ios) as it is using react-native-web. The app uses real time updates and other really cool features, Clone its repo to have a go :).",
     "diversecommerceP": "Created a showcase E-commerce progressive web app.",
+    "diversecommerceB": "Created a fully working showcase e-commerce website using react and node js to serve the app. The app uses Stripe integration to handle payments and it is hosted for on heroku.",
     "netflixP": "Created a showcase clone of popular entertainment site Netflix.",
     "netflixB": "This is a Netflix clone realised to showcase an entertainment app in react. The login/sign up flow was implemented using firebase auth and the collection of films and series are stored on firestore."
   }

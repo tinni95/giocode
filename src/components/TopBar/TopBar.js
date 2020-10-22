@@ -16,17 +16,20 @@ const TopBar = ({ refs }) => {
 
   const handleClick = () => {
     if (refs.busy) {
-      refs.containerRef.current.classList.toggle("visible");
-
-      if (refs.busy == "blue") {
+      if (refs.busy == "portfolio") {
+        history.push("/portfolio");
+      } else if (refs.busy == "blue") {
+        refs.containerRef.current.classList.toggle("visible");
         refs.frontEndRef.current.classList.toggle("blue");
         refs.designRef.current.classList.toggle("invisible");
         refs.backEndRef.current.classList.toggle("invisible");
       } else if (refs.busy == "ocean") {
+        refs.containerRef.current.classList.toggle("visible");
         refs.backEndRef.current.classList.toggle("ocean");
         refs.designRef.current.classList.toggle("invisible");
         refs.frontEndRef.current.classList.toggle("invisible");
       } else {
+        refs.containerRef.current.classList.toggle("visible");
         refs.designRef.current.classList.toggle("red");
         refs.frontEndRef.current.classList.toggle("invisible");
         refs.backEndRef.current.classList.toggle("invisible");
