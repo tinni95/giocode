@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import "./styles.css";
 import { Items } from "../../constants/PortfolioItems";
 import { useHistory } from "react-router-dom";
-import refContext from "../../refContext";
 
 const Portfolio = ({ refs }) => {
   React.useEffect(() => {
@@ -25,8 +24,8 @@ const Portfolio = ({ refs }) => {
             body={t(bodyShort)}
             onClick={() => {
               history.push("portfolio-item/" + id);
-              refs.menuRef.current.classList.toggle("open");
               refs.busy = "portfolio";
+              refs.menuRef.current.classList.toggle("open");
             }}
           />
         ))}

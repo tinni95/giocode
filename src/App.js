@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import classNames from "classnames";
 import Career from "./pages/Career/Career";
@@ -13,6 +13,7 @@ import i18n from "./i18n/i18n";
 import Education from "./pages/Education/Education";
 import { isMobile } from "react-device-detect";
 import PortfolioItem from "./pages/PortfolioItem/PortfolioItem";
+import refContext from "./refContext";
 
 const Cursor = () => {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -74,8 +75,56 @@ const Cursor = () => {
   );
 };
 
+function Inner() {
+  const [locationKeys, setLocationKeys] = useState([]);
+  const history = useHistory();
+  const refs = useContext(refContext);
+
+  React.useEffect(() => {
+    return history.listen((location) => {
+      if (history.action === "PUSH") {
+        setLocationKeys([location.key]);
+      }
+
+      if (history.action === "POP") {
+        if (locationKeys[1] === location.key) {
+          setLocationKeys(([_, ...keys]) => keys);
+          console.log("POP");
+          if (refs.menuRef.current.classList.contains("open"))
+            refs.menuRef.current.classList.toggle("open");
+          refs.busy = null;
+          // Handle forward event
+        } else {
+          setLocationKeys((keys) => [location.key, ...keys]);
+          console.log("POP");
+          if (refs.menuRef.current.classList.contains("open"))
+            refs.menuRef.current.classList.toggle("open");
+          refs.busy = null;
+          // Handle back event
+        }
+      }
+    });
+  }, [locationKeys]);
+
+  return (
+    <div className="App">
+      <TopBar />
+      {!isMobile && <Cursor />}
+      <Switch>
+        <Route component={Home} path={"/"} exact />
+        <Route component={Career} path={"/career"} exact />
+        <Route component={Education} path={"/education"} exact />
+        <Route component={Portfolio} path={"/portfolio"} exact />
+        <Route component={PortfolioItem} path={"/portfolio-item/:id"} exact />
+        <Route component={Stack} path={"/stack"} exact />
+      </Switch>
+    </div>
+  );
+}
+
 function App() {
   const [title, setTitle] = React.useState("");
+
   return (
     <I18nextProvider i18n={i18n}>
       <MenuContext.Provider
@@ -90,22 +139,7 @@ function App() {
           busy: false,
         }}
       >
-        <div className="App">
-          <TopBar />
-          {!isMobile && <Cursor />}
-          <Switch>
-            <Route component={Home} path={"/"} exact />
-            <Route component={Career} path={"/career"} exact />
-            <Route component={Education} path={"/education"} exact />
-            <Route component={Portfolio} path={"/portfolio"} exact />
-            <Route
-              component={PortfolioItem}
-              path={"/portfolio-item/:id"}
-              exact
-            />
-            <Route component={Stack} path={"/stack"} exact />
-          </Switch>
-        </div>
+        <Inner />
       </MenuContext.Provider>
     </I18nextProvider>
   );

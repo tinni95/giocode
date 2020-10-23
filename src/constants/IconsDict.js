@@ -24,6 +24,8 @@ import coolors from "../assets/Stack-Design/coolors.png";
 import colorslurp from "../assets/Stack-Design/colorslurp.png";
 import java from "../assets/java.png";
 import chartjs from "../assets/portfolio/chartjs.png";
+import github from "../assets/portfolio/github.png";
+import internet from "../assets/portfolio/internet.png";
 
 export default {
   chartjs,
@@ -52,4 +54,6 @@ export default {
   adobexd,
   firebase,
   SocketIO,
+  internet,
+  github,
 };
