@@ -7,6 +7,7 @@ import diverse from "../assets/portfolio/diverse.png";
 import diversecommerce from "../assets/portfolio/diversecommerce.png";
 import netflix from "../assets/portfolio/netflix.png";
 import IconsDict from "./IconsDict";
+import Profilo from "../assets/previews/alfPartner/profilo.png";
 export const Items = [
   {
     id: 0,
@@ -21,6 +22,23 @@ export const Items = [
       { img: IconsDict.redux, text: "redux" },
       { img: IconsDict.java, text: "java" },
       { img: IconsDict.typescript, text: "typescript" },
+    ],
+    videos: [
+      {
+        title: "video",
+        uri: "https://player.vimeo.com/video/472160346",
+        preview: Profilo,
+      },
+      {
+        title: "video",
+        uri: "https://player.vimeo.com/video/472160346",
+        preview: Profilo,
+      },
+      {
+        title: "video",
+        uri: "https://player.vimeo.com/video/472160346",
+        preview: Profilo,
+      },
     ],
   },
   {

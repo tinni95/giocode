@@ -2,6 +2,7 @@ import { Grid } from "@material-ui/core";
 import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import PortfolioItemHeader from "../../components/PortfolioItemHeader/PortfolioItemHeader";
+import VideoSection from "../../components/VideoSection/VideoSection";
 import { Items } from "../../constants/PortfolioItems";
 
 export default function PortfolioItem() {
@@ -11,6 +12,7 @@ export default function PortfolioItem() {
   return (
     <Grid style={{ background: "#FBFBFB", height: "100vh" }}>
       <PortfolioItemHeader item={item} />
+      {item.videos?.length && <VideoSection videos={item.videos} />}
     </Grid>
   );
 }

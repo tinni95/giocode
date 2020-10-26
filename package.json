@@ -17,7 +17,8 @@
     "react-i18next": "^11.7.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-sky": "^1.1.0"
+    "react-sky": "^1.1.0",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "deploy": "scp -r ./build/* sammy@161.35.29.214:/var/www/html/giocode.me/public_html",

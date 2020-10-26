@@ -120,10 +120,9 @@
   width: 100px;
   height: 100px;
   border-bottom-right-radius: 120px;
-
   background-color: var(--pink);
   position: absolute;
-  transition: 0.5s all;
+  transition: height 0.5s, width 0.5s, border-bottom-right-radius 0.5s;
 }
 
 .wrapper.is-menu-open {
@@ -158,10 +157,13 @@
 }
 
 .centerMenu.open .menuItem {
+  opacity: 1;
+  animation: opacity 0.6s;
   pointer-events: auto;
 }
 
 .menuItem {
+  opacity: 0;
   pointer-events: none;
   position: relative;
   font-size: 22px;
@@ -181,7 +183,7 @@
 }
 
 .sky.open #sky {
-  animation: opacity 0.8s;
+  animation: opacity 0.7s;
   opacity: 1;
   z-index: 2 !important;
   pointer-events: none;
