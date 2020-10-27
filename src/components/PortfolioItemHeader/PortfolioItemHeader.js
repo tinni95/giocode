@@ -2,6 +2,8 @@ import { Card, Grid } from "@material-ui/core";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./styles.css";
+import github from "../../assets/portfolio/github.png";
+import internet from "../../assets/portfolio/internet.png";
 
 export default function PortfolioItemHeader({ item }) {
   const { t, i18n } = useTranslation();
@@ -57,6 +59,32 @@ export default function PortfolioItemHeader({ item }) {
               })}
             </Grid>
           </Grid>
+          <div
+            style={{
+              justifyContent: "flex-end",
+              display: "flex",
+              alignItems: "flex-end",
+              padding: 5,
+              flexDirection: "row",
+            }}
+          >
+            {item.github && (
+              <a href={item.github} target="_blank">
+                <Grid direction="row" className={"linkDemo"} container>
+                  <img src={github} style={{ padding: 5 }} height="20px" />
+                  <p>github</p>
+                </Grid>
+              </a>
+            )}
+            {item.demo && (
+              <a href={item.demo} target="_blank">
+                <Grid direction="row" className={"linkDemo"} container>
+                  <img src={internet} style={{ padding: 5 }} height="20px" />
+                  <p>live demo</p>
+                </Grid>
+              </a>
+            )}
+          </div>
         </Grid>
       </Card>
     </Grid>

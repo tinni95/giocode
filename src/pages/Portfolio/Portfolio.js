@@ -16,19 +16,23 @@ const Portfolio = ({ refs }) => {
   return (
     <Grid container justify={"center"} style={{ backgroundColor: "#FBFBFB" }}>
       <Grid className={"PortfolioContainer"} container xs={12}>
-        {Items.map(({ image, title, subtitle, bodyShort, id }) => (
-          <PortfolioCard
-            image={image}
-            title={title}
-            where={subtitle}
-            body={t(bodyShort)}
-            onClick={() => {
-              history.push("portfolio-item/" + id);
-              refs.busy = "portfolio";
-              refs.menuRef.current.classList.toggle("open");
-            }}
-          />
-        ))}
+        {Items.map(
+          ({ image, title, subtitle, bodyShort, id, github, demo }) => (
+            <PortfolioCard
+              image={image}
+              title={title}
+              where={subtitle}
+              body={t(bodyShort)}
+              demo={demo}
+              github={github}
+              onClick={() => {
+                history.push("portfolio-item/" + id);
+                refs.busy = "portfolio";
+                refs.menuRef.current.classList.toggle("open");
+              }}
+            />
+          )
+        )}
       </Grid>
     </Grid>
   );

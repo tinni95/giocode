@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Grid } from "@material-ui/core";
 import "./Portfolio.css";
-
+import github from "../../assets/portfolio/github.png";
+import internet from "../../assets/portfolio/internet.png";
 export const PortfolioCard = (props) => {
   return (
     <Grid onClick={props.onClick} container sm={12} md={6}>
@@ -35,6 +36,22 @@ export const PortfolioCard = (props) => {
               {props.body}
             </p>
           </Grid>
+          <div
+            style={{
+              justifyContent: "flex-end",
+              display: "flex",
+              alignItems: "flex-end",
+              padding: 5,
+              flexDirection: "row",
+            }}
+          >
+            {props.github && (
+              <img src={github} style={{ padding: 5 }} height="20px" />
+            )}
+            {props.demo && (
+              <img src={internet} style={{ padding: 5 }} height="20px" />
+            )}
+          </div>
         </Grid>
       </Card>
     </Grid>

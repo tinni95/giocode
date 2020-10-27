@@ -124,3 +124,12 @@
     margin-top: 15px;
   }
 }
+
+.linkDemo {
+  align-items: center;
+  margin: 5px;
+}
+
+.linkDemo:hover {
+  filter: invert(0.5);
+}

@@ -13,3 +13,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.players {
+  height: "80%";
+  top: 0;
+  position: absolute;
+  left: 0;
+}

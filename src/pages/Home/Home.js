@@ -41,7 +41,6 @@ const Home = ({ refs }) => {
               className={"num"}
               style={{ marginTop: 10 }}
               container
-              o
             >
               <img src={phone} className={"icon"} />
               <p className={"contact"}>+39 3516620601</p>

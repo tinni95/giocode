@@ -8,6 +8,12 @@ import diversecommerce from "../assets/portfolio/diversecommerce.png";
 import netflix from "../assets/portfolio/netflix.png";
 import IconsDict from "./IconsDict";
 import Profilo from "../assets/previews/alfPartner/profilo.png";
+import Login from "../assets/previews/tendit/login.png";
+import Upload from "../assets/previews/tendit/upload.png";
+import Partner from "../assets/previews/alfPartner/Partner-preview.png";
+import Main from "../assets/previews/valore24/main.png";
+import Table from "../assets/previews/valore24/table.png";
+
 export const Items = [
   {
     id: 0,
@@ -25,19 +31,10 @@ export const Items = [
     ],
     videos: [
       {
-        title: "video",
-        uri: "https://player.vimeo.com/video/472160346",
-        preview: Profilo,
-      },
-      {
-        title: "video",
-        uri: "https://player.vimeo.com/video/472160346",
-        preview: Profilo,
-      },
-      {
-        title: "video",
-        uri: "https://player.vimeo.com/video/472160346",
-        preview: Profilo,
+        title: "Summary",
+        uri: "https://player.vimeo.com/video/459479115",
+        preview: Partner,
+        body: "alfPartnerPreview",
       },
     ],
   },
@@ -62,6 +59,26 @@ export const Items = [
       { img: IconsDict.typescript, text: "typescript" },
       { img: IconsDict.apollo, text: "Apollo" },
       { img: IconsDict.graphql, text: "Graphql" },
+    ],
+    videos: [
+      {
+        title: "Login and Apply",
+        uri: "https://player.vimeo.com/video/472357500",
+        preview: Login,
+        body: "tenditPreview1",
+      },
+      {
+        title: "Upload a request",
+        uri: "https://player.vimeo.com/video/472357860",
+        preview: Upload,
+        body: "tenditPreview2",
+      },
+      {
+        title: "User Profile",
+        uri: "https://player.vimeo.com/video/472160346",
+        preview: Profilo,
+        body: "tenditPreview3",
+      },
     ],
   },
   {
@@ -93,11 +110,28 @@ export const Items = [
       { img: IconsDict.chartjs, text: "Chartjs" },
       { img: IconsDict.mat, text: "Material Ui" },
     ],
+    videos: [
+      {
+        title: "Main Functionality",
+        uri: "https://player.vimeo.com/video/472752381",
+        preview: Main,
+        body:
+          "this shows the main functionality developed in valore 24; i.e. adding a new Risk Evaluation",
+      },
+      {
+        title: "Evaluation List",
+        uri: "https://player.vimeo.com/video/472752957",
+        preview: Table,
+        body:
+          "This shows the table used to display the evaluation risk, where they can be viewed, deleted and exported as pdf/xlsx",
+      },
+    ],
   },
   {
     id: 4,
     title: "Diverse agency",
     image: diverse,
+    demo: "https://diverseagency.it/",
     subtitle: "Website development",
     bodyShort: "diverseP",
     bodyLong: "diverseB",
@@ -113,6 +147,8 @@ export const Items = [
     title: "Blog app",
     image: blog,
     subtitle: "Blogging app, mobile app, back-end, showcase",
+    demo: "https://modest-yalow-12b0b8.netlify.app/",
+    github: "https://github.com/tinni95/reactnative-graphql-code-test",
     bodyShort: "blogappP",
     bodyLong: "blogappB",
     stackItems: [
@@ -130,6 +166,8 @@ export const Items = [
     image: diversecommerce,
     subtitle: "E-commerce development, showcase",
     bodyShort: "diversecommerceP",
+    github: "https://github.com/tinni95/React_Ecommerce",
+    demo: "https://diverse-ecommerce.herokuapp.com/",
     bodyLong: "diversecommerceB",
     stackItems: [
       { img: IconsDict.react, text: "React" },
@@ -143,6 +181,7 @@ export const Items = [
     id: 7,
     title: "Netflix",
     image: netflix,
+    demo: "https://netflix-clone-giocode.herokuapp.com/",
     subtitle: "Entertainment app, showcase",
     bodyShort: "netflixP",
     bodyLong: "netflixB",

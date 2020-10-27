@@ -33,16 +33,17 @@ Player.Video = function PlayerVideo({ src, ...restProps }) {
   return showPlayer
     ? ReactDOM.createPortal(
         <Overlay onClick={() => setShowPlayer(false)}>
-          <Inner>
+          <div align="center">
             <iframe
+              align="center"
               src={src + "?autoplay=1&loop=1&autopause=0"}
               width="800"
               height="800"
               frameborder="0"
               allow="autoplay;fullscreen"
             ></iframe>
-            <Close />
-          </Inner>
+          </div>
+          <Close />
         </Overlay>,
         document.body
       )
