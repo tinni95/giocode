@@ -48,17 +48,10 @@ export const Items = [
     stackItems: [
       { img: IconsDict.expo, text: "expo" },
       { img: IconsDict.elephant, text: "Postgress" },
-      { img: IconsDict.react, text: "React-native" },
       { img: IconsDict.sequelize, text: "Sequelize" },
       { img: IconsDict.adobexd, text: "Adobe XD" },
-      { img: IconsDict.illustrator, text: "Adobe illustrator" },
-      { img: IconsDict.flaticon, text: "Flaticon" },
-      { img: IconsDict.coolors, text: "Coolors" },
-      { img: IconsDict.colorslurp, text: "Color Slurp" },
       { img: IconsDict.jest, text: "jest" },
-      { img: IconsDict.typescript, text: "typescript" },
       { img: IconsDict.apollo, text: "Apollo" },
-      { img: IconsDict.graphql, text: "Graphql" },
     ],
     videos: [
       {
