@@ -73,7 +73,7 @@ const Career = ({ refs }) => {
             date={"Jun 2016 - Feb 2018"}
             title={"Freelance Web Designer"}
             subtitle={"Freelance, Worldwide"}
-            body={t("activity")}
+            body={t("wordpress")}
           />
         </Card>
       </Grid>
