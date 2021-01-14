@@ -29,14 +29,6 @@ export const Items = [
       { img: IconsDict.java, text: "java" },
       { img: IconsDict.typescript, text: "typescript" },
     ],
-    videos: [
-      {
-        title: "Summary",
-        uri: "https://player.vimeo.com/video/459479115",
-        preview: Partner,
-        body: "alfPartnerPreview",
-      },
-    ],
   },
   {
     id: 1,
