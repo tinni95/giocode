@@ -17,12 +17,13 @@ import Table from "../assets/previews/valore24/table.png";
 export const Items = [
   {
     id: 0,
-    title: "Alfonsino Partner",
+    title: "Chirurghi estetici",
     image: alf,
-    subtitle: "App development",
+    subtitle: "Web App",
     bodyShort: "alfPartnerP",
     bodyLong: "alfPartnerB",
-    completed: "20/10/2020",
+    demo: "https://www.chirurghiestetici.it/",
+    completed: "2023",
     stackItems: [
       { img: IconsDict.react, text: "React-native" },
       { img: IconsDict.redux, text: "redux" },
@@ -100,15 +101,13 @@ export const Items = [
         title: "Main Functionality",
         uri: "https://player.vimeo.com/video/472752381",
         preview: Main,
-        body:
-          "this shows the main functionality developed in valore 24; i.e. adding a new Risk Evaluation",
+        body: "this shows the main functionality developed in valore 24; i.e. adding a new Risk Evaluation",
       },
       {
         title: "Evaluation List",
         uri: "https://player.vimeo.com/video/472752957",
         preview: Table,
-        body:
-          "This shows the table used to display the evaluation risk, where they can be viewed, deleted and exported as pdf/xlsx",
+        body: "This shows the table used to display the evaluation risk, where they can be viewed, deleted and exported as pdf/xlsx",
       },
     ],
   },
@@ -166,7 +165,8 @@ export const Items = [
     id: 7,
     title: "Netflix",
     image: netflix,
-    demo: "https://netflix-clone-giocode.herokuapp.com/",
+    completed: "2020",
+    demo: "https://netflix-clone-phi-smoky.vercel.app/",
     subtitle: "Entertainment app, showcase",
     bodyShort: "netflixP",
     bodyLong: "netflixB",
