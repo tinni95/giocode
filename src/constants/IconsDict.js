@@ -29,12 +29,14 @@ import internet from "../assets/portfolio/internet.png";
 import aws from "../assets/Stack-Back-end/aws.png";
 import s3 from "../assets/Stack-Back-end/s3.png";
 import appSync from "../assets/Stack-Back-end/AppSync.png";
+import gatsby from "../assets/Stack-Front-end/gatsbhy.png";
 import lambda from "../assets/Stack-Back-end/Lambda.png";
 
 export default {
   chartjs,
   s3,
   appSync,
+  gatsby,
   lambda,
   aws,
   java,

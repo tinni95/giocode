@@ -73,7 +73,7 @@ export const Items = [
   },
   {
     id: 223,
-    title: "Chirurgho",
+    title: "Chirurghi estetici",
     image: chirurgo,
     subtitle: "Mobile App/ Website",
     bodyShort: "chirurgoA",
@@ -82,6 +82,8 @@ export const Items = [
     stackItems: [
       { img: IconsDict.react, text: "React-native" },
       { img: IconsDict.react, text: "React" },
+      { img: IconsDict.gatsby, text: "Gatsby" },
+      { img: IconsDict.gatsby, text: "Gatsby" },
       { img: IconsDict.typescript, text: "typescript" },
     ],
   },
