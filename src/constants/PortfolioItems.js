@@ -1,6 +1,7 @@
 import alf from "../assets/portfolio/alfonsino.png";
 import inventario from "../assets/portfolio/inventario.png";
 import blog from "../assets/portfolio/blog.png";
+import bbnb from "../assets/portfolio/bbnb.png";
 import tendit from "../assets/portfolio/tendit.png";
 import valore24 from "../assets/portfolio/valore24.png";
 import diverse from "../assets/portfolio/diverse.png";
@@ -10,25 +11,43 @@ import IconsDict from "./IconsDict";
 import Profilo from "../assets/previews/alfPartner/profilo.png";
 import Login from "../assets/previews/tendit/login.png";
 import Upload from "../assets/previews/tendit/upload.png";
-import Partner from "../assets/previews/alfPartner/Partner-preview.png";
 import Main from "../assets/previews/valore24/main.png";
+import bbnbAdmin from "../assets/previews/bbnb/bbnb-admin.png";
+import bbnbExpo from "../assets/previews/bbnb/bbnb-ezpo.png";
 import Table from "../assets/previews/valore24/table.png";
 
 export const Items = [
   {
     id: 0,
-    title: "Chirurghi estetici",
-    image: alf,
-    subtitle: "Web App",
-    bodyShort: "alfPartnerP",
+    title: "BBnbusiness",
+    image: bbnb,
+    subtitle: "Mobile App/ Admin App",
+    bodyShort: "bbnbusinessA",
     bodyLong: "alfPartnerB",
-    demo: "https://www.chirurghiestetici.it/",
-    completed: "2023",
+    completed: "2024",
     stackItems: [
       { img: IconsDict.react, text: "React-native" },
-      { img: IconsDict.redux, text: "redux" },
-      { img: IconsDict.java, text: "java" },
+      { img: IconsDict.react, text: "React" },
+      { img: IconsDict.aws, text: "AWS Amplify" },
+      { img: IconsDict.appSync, text: "AWS Appsync" },
+      { img: IconsDict.s3, text: "AWS s3" },
+      { img: IconsDict.lambda, text: "AWS lambda" },
       { img: IconsDict.typescript, text: "typescript" },
+      { img: IconsDict.graphql, text: "graphql" },
+    ],
+    videos: [
+      {
+        title: "Admin",
+        uri: "https://player.vimeo.com/video/1002095473",
+        preview: bbnbAdmin,
+        body: "bbnbAdmin",
+      },
+      {
+        title: "Mobile app",
+        uri: "https://player.vimeo.com/video/1002095728",
+        preview: bbnbExpo,
+        body: "bbnbExpo",
+      },
     ],
   },
   {

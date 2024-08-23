@@ -26,9 +26,17 @@ import java from "../assets/java.png";
 import chartjs from "../assets/portfolio/chartjs.png";
 import github from "../assets/portfolio/github.png";
 import internet from "../assets/portfolio/internet.png";
+import aws from "../assets/Stack-Back-end/aws.png";
+import s3 from "../assets/Stack-Back-end/s3.png";
+import appSync from "../assets/Stack-Back-end/AppSync.png";
+import lambda from "../assets/Stack-Back-end/Lambda.png";
 
 export default {
   chartjs,
+  s3,
+  appSync,
+  lambda,
+  aws,
   java,
   react,
   html,

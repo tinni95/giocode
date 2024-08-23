@@ -1,5 +1,7 @@
 {
   "translation": {
+    "bbnbusinessA": "Developed back end and front end of a mobile app and a back office for a tourist guide app in tenerife",
+    "bbnbusinessB": "Bbnbusiness is a guide app to welcome people to activities and services in the island of tenerife. The app has two components, a react app, used as a back office, and a consumer facing mobile app, built with react native. As you can see from the videos, pretty much all elements in the mobile app are customisable from the admin interface.",
     "Welcome to React": "Being a creative person, I easily find effective ways to solve problems entailing products’ infrastructure",
     "AlfonsinoJob": "In collaboration with my assistant and with the back-end team, my work consisted in re-writing the application of the food delivery start-up into React-Native, having less performant frameworks. I created some android native java code to solve specific problems and enriched my knowledge in Redux and git.",
     "Giu": "Jun",
