@@ -66,7 +66,7 @@ export default function PortfolioItemHeader({ item }) {
           >
             <p className="PortfolioSectionTitle">Summary</p>
             <p className="PortfolioSectionBody">{cleanedText}</p>
-            {links && (
+            {links?.length > 0 && (
               <div className="ExtractedLinks">
                 <h4>Links:</h4>
                 {links}
