@@ -5,8 +5,38 @@ import "./styles.css";
 import github from "../../assets/portfolio/github.png";
 import internet from "../../assets/portfolio/internet.png";
 
+const extractAndRemoveLinks = (text) => {
+  // Regular expression to match URLs
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+
+  // Find all matches
+  const matches = text.match(urlRegex) || [];
+
+  // Remove links from the original text
+  const cleanedText = text.replace(urlRegex, "").replace(/\s+/g, " ").trim();
+
+  // Create an array of anchor elements with line breaks
+  const links = matches.map((url, index) => (
+    <React.Fragment key={index}>
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: "blue", display: "block", marginBottom: "5px" }}
+      >
+        {url}
+      </a>
+      {index < matches.length - 1 && <br />}
+    </React.Fragment>
+  ));
+
+  return { cleanedText, links };
+};
+
 export default function PortfolioItemHeader({ item }) {
   const { t, i18n } = useTranslation();
+  const bodyContent = t(item.bodyLong);
+  const { cleanedText, links } = extractAndRemoveLinks(bodyContent);
   return (
     <Grid container xs={12} className={"PortfolioItemHeaderContainer"}>
       <Card style={{ width: "100%" }}>
@@ -35,7 +65,13 @@ export default function PortfolioItemHeader({ item }) {
             className="PortfolioSummarySectionContainer"
           >
             <p className="PortfolioSectionTitle">Summary</p>
-            <p className="PortfolioSectionBody">{t(item.bodyLong)}</p>
+            <p className="PortfolioSectionBody">{cleanedText}</p>
+            {links && (
+              <div className="ExtractedLinks">
+                <h4>Links:</h4>
+                {links}
+              </div>
+            )}
           </Grid>
           <Grid item xs={12} sm={6} className="PortfolioStackSectionContainer">
             <p className="PortfolioSectionTitle">Stack</p>

@@ -2,6 +2,8 @@ import alf from "../assets/portfolio/alfonsino.png";
 import inventario from "../assets/portfolio/inventario.png";
 import blog from "../assets/portfolio/blog.png";
 import bbnb from "../assets/portfolio/bbnb.png";
+import astarte from "../assets/portfolio/astarte.png";
+import chirurgo from "../assets/portfolio/chirurgo.png";
 import tendit from "../assets/portfolio/tendit.png";
 import valore24 from "../assets/portfolio/valore24.png";
 import diverse from "../assets/portfolio/diverse.png";
@@ -19,11 +21,30 @@ import Table from "../assets/previews/valore24/table.png";
 export const Items = [
   {
     id: 0,
+    title: "Astarte",
+    image: astarte,
+    subtitle: "Mobile App/ Admin App",
+    bodyShort: "astarteA",
+    bodyLong: "astarteB",
+    completed: "2024",
+    stackItems: [
+      { img: IconsDict.react, text: "React-native" },
+      { img: IconsDict.react, text: "React" },
+      { img: IconsDict.aws, text: "AWS Amplify" },
+      { img: IconsDict.appSync, text: "AWS Appsync" },
+      { img: IconsDict.s3, text: "AWS s3" },
+      { img: IconsDict.lambda, text: "AWS lambda" },
+      { img: IconsDict.typescript, text: "typescript" },
+      { img: IconsDict.graphql, text: "graphql" },
+    ],
+  },
+  {
+    id: 1,
     title: "BBnbusiness",
     image: bbnb,
     subtitle: "Mobile App/ Admin App",
     bodyShort: "bbnbusinessA",
-    bodyLong: "alfPartnerB",
+    bodyLong: "bbnbusinessB",
     completed: "2024",
     stackItems: [
       { img: IconsDict.react, text: "React-native" },
@@ -51,8 +72,23 @@ export const Items = [
     ],
   },
   {
-    id: 1,
+    id: 223,
+    title: "Chirurgho",
+    image: chirurgo,
+    subtitle: "Mobile App/ Website",
+    bodyShort: "chirurgoA",
+    bodyLong: "chirurgoB",
+    completed: "2024",
+    stackItems: [
+      { img: IconsDict.react, text: "React-native" },
+      { img: IconsDict.react, text: "React" },
+      { img: IconsDict.typescript, text: "typescript" },
+    ],
+  },
+  {
+    id: 2,
     title: "tendit",
+    completed: "2021",
     image: tendit,
     subtitle: "App development, UX, back-end, website development",
     bodyShort: "tenditP",
@@ -87,7 +123,7 @@ export const Items = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Inventario",
     image: inventario,
     subtitle: "App development, UX, Back-end development",

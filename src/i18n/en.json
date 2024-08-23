@@ -1,7 +1,11 @@
 {
   "translation": {
+    "chirurgoA": "Responsible of the front end of a web app and mobile app for a medical group of surgeons",
+    "chirurgoB": "Developed a mobile app f",
     "bbnbusinessA": "Developed back end and front end of a mobile app and a back office for a tourist guide app in tenerife",
     "bbnbusinessB": "Bbnbusiness is a guide app to welcome people to activities and services in the island of tenerife. The app has two components, a react app, used as a back office, and a consumer facing mobile app, built with react native. As you can see from the videos, pretty much all elements in the mobile app are customisable from the admin interface.",
+    "astarteA": "Directed the development of a mobile app and a back office for a social media app for artists",
+    "astarteB": "Astarte is the most complex mobile app that I have directed and managed. \nThe app is now available on the app stores but it is not actively used at the moment. My client is now working with another development company and it is currently on pause. \nThe app includes instagram like features for posts, follows, chats. It also has another section for creation of events and events booking.\nHere attached is a Figma of the app. I cannot run the app at the moment because I am not owner of the back end anymore. But I am happy to go through its code and talk about the implementation. https://www.figma.com/design/L48xJsLeBE4X43sRQ330CG/QUELLO-GIUSTO https://www.figma.com/design/cMk9G3iVkgLCvoGO0iTC22/ASTARTE-APP",
     "Welcome to React": "Being a creative person, I easily find effective ways to solve problems entailing products’ infrastructure",
     "AlfonsinoJob": "In collaboration with my assistant and with the back-end team, my work consisted in re-writing the application of the food delivery start-up into React-Native, having less performant frameworks. I created some android native java code to solve specific problems and enriched my knowledge in Redux and git.",
     "Giu": "Jun",

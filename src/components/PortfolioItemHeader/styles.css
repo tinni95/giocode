@@ -121,6 +121,8 @@
 
   .PortfolioSectionBody {
     font-size: 16px;
+    word-wrap: break-word;
+    white-space: pre-line;
   }
   .PortfolioSectionStack {
     margin-top: 15px;
